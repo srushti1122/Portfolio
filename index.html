@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srushti Bhilare - Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font is applied and for smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Specific styles for active navigation link */
+        .nav-link.active {
+            color: #0d6efd !important; /* Bootstrap primary blue */
+            font-weight: 600;
+        }
+        /* Custom height for hero section to fill viewport */
+        .min-vh-100-minus-header {
+            min-height: calc(100vh - 72px); /* Adjust 72px based on your header's actual height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Custom hover effect for cards */
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand fs-4 fw-bold text-primary rounded-3 px-2 py-1 hover-bg-light" href="#hero">Srushti Bhilare</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary hover-text-primary rounded-3 px-3 py-2" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary hover-text-primary rounded-3 px-3 py-2" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary hover-text-primary rounded-3 px-3 py-2" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary hover-text-primary rounded-3 px-3 py-2" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5"> <!-- Adjust padding top to account for fixed header, will be adjusted by JS -->
+
+        <!-- Hero/About Me Section -->
+        <section id="hero" class="bg-gradient-to-r from-primary to-purple-600 text-white py-5 min-vh-100-minus-header">
+            <div class="container text-center">
+                <img src="D:\Srushti\Srushti-portfolio\WhatsApp Image 2025-07-06 at 5.40.29 PM.jpeg" alt="Srushti Bhilare Profile Picture" class="square img-fluid w-25 h-25 mx-auto mb-4 border border-white border-4 shadow-lg">
+                <h1 class="display-4 fw-bold mb-3 text-info">Hi, I'm <span class="text-warning">Srushti Bhilare</span></h1>
+                <p class="lead mb-4 fw-light">A passionate Web Developer | Full Stack Developer</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a href="#projects" class="btn btn-light btn-lg rounded-pill shadow-lg hover-bg-light-subtle hover-scale-105">View My Work</a>
+                    <a href="#contact" class="btn btn-light btn-lg rounded-pill shadow-lg hover-bg-light-subtle hover-scale-105">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-white">
+            <div class="container px-4" style="max-width: 800px;">
+                <h2 class="text-center text-dark mb-5 fw-bold">About Me</h2>
+                <div class="lead text-muted text-justify">
+                    <p class="mb-3">Hello! I'm Srushti Bhilare, a Full-Stack Developer with a passion for creating beautiful and functional web applications. I specialize in Java , Spring Boot REST API, JPA, React JS, Bootstrap, 
+MySQL HTML, CSS  and enjoy bringing ideas to life through code.</p>
+                    <p class="mb-3">My journey in technology started when I realized that my interest in problem-solving could be applied through software—after years in Mechanical Engineering, I began learning to code and quickly became passionate about building efficient, user-centered solutions. I love solving complex problems and continuously learning new technologies to improve my skills and deliver high-quality solutions.</p>
+                    <p>When I'm not coding, you can find me trecking, reading, singing. I'm always open to new opportunities and collaborations, so feel free to connect!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 bg-light">
+            <div class="container px-4">
+                <h2 class="text-center text-dark mb-5 fw-bold">My Skills</h2>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- Example Skill Card -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=Java" alt="JavaScript Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">Java</h3>
+                                <p class="text-muted small">Proficient in Collections, Spring Boot, Hibernate,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=JS" alt="JavaScript Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">JavaScript</h3>
+                                <p class="text-muted small">Proficient in ES6+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=RC" alt="React Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">React</h3>
+                                <p class="text-muted small">Hooks, Context API, Redux</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=BS" alt="Bootstrap Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">Bootstrap</h3>
+                                <p class="text-muted small">Responsive Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=DB" alt="Database Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">Databases</h3>
+                                <p class="text-muted small">MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center card-hover-effect">
+                            <div class="card-body p-4">
+                                <img src="https://placehold.co/60x60/0d6efd/FFFFFF?text=GT" alt="Git Icon" class="rounded-circle mx-auto mb-3" style="width: 60px; height: 60px;">
+                                <h3 class="h5 fw-semibold text-dark">Git & GitHub</h3>
+                                <p class="text-muted small">Version Control</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-white">
+            <div class="container px-4">
+                <h2 class="text-center text-dark mb-5 fw-bold">My Projects</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Example Project Card 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm overflow-hidden card-hover-effect">
+                            <img src="./images/project img.jpg" class="card-img-top" alt="Project 1" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-semibold text-dark mb-2">Handyman Service System</h3>
+                                <p class="card-text text-muted small mb-3">Handyman Service System, a full-stack web application designed to connect customers with local service providers and simplify the process of booking and managing home services.</p>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-2 py-1">Java Spring Boot</span>
+                                    <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-2 py-1">React.js </span>
+                                    <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-2 py-1">MySQL</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="https://github.com/srushti1122/Handyman_Service_System" target="_blank" class="text-primary text-decoration-none fw-medium d-flex align-items-center">
+                                        GitHub Link
+                                        <svg class="ms-1" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0 0 1h2.793L7.646 9.146a.5.5 0 1 0 .708.708L15 1.707V4.5a.5.5 0 0 0 1 0v-4z"/></svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="text-secondary text-decoration-none fw-medium d-flex align-items-center">
+                                        GitHub
+                                        <svg class="ms-1" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2.0 0 .15.15.55-.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container px-4" style="max-width: 700px;">
+                <h2 class="text-center text-dark mb-5 fw-bold">Get In Touch</h2>
+                <p class="text-center lead text-muted mb-4">Have a question or want to work together? Feel free to reach out!</p>
+                <form class="bg-white p-4 rounded-3 shadow-sm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Name</label>
+                        <!-- <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Srushti Bhilare"> -->
+                        <div id="nameBox" style="margin-top:10px; padding:10px; border:1px solid #ccc; border-radius:5px; background-color:#f8f9fa;">
+                             Srushti Bhilare
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email</label>
+                        <!-- <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="your.email@example.com"> -->
+                         <div id="emailBox" style="margin-top:10px; padding:10px; border:1px solid #ccc; border-radius:5px; background-color:#f8f9fa;">
+                             srushtibhi50@gmail.com
+                        </div>
+                    </div>
+                    
+                </form>
+                <div class="text-center text-muted mt-5">
+                    <p class="mb-3">You can also find me on:</p>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="https://linkedin.com/in/srushti-bhilare-540556373" target="_blank" class="text-primary hover-text-primary-emphasis fs-4" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542V13.394h2.401zm-1.2-5.928c.857 0 1.547-.698 1.547-1.569 0-.87-.69-1.567-1.547-1.567-.857 0-1.547.697-1.547 1.567 0 .87.69 1.569 1.547 1.569zm4.327 5.928V6.169h-2.34c.04.72.074 1.48.074 2.043v.065c0 2.2 2.298 2.067 2.298 0V8.29c0-.857-.393-1.423-1.01-1.423-.574 0-.954.38-.954.954v4.57h2.401v-6.3c0-3.359-3.766-3.116-4.24-.035V13.394h2.401z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/srushti1122" target="_blank" class="text-dark hover-text-dark-emphasis fs-4" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2.0 0 .15.15.55-.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025  Srushti Bhilare. All rights reserved.</p>
+            <!-- <p class="small mt-2">Built with dedication and Bootstrap</p> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript for smooth scrolling and active navigation links
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            const navbarCollapse = document.getElementById('navbarNav');
+            const header = document.querySelector('header');
+
+            // Function to update active navigation link based on scroll position
+            const updateActiveNavLink = () => {
+                let current = '';
+                const headerHeight = header.offsetHeight; // Get dynamic header height
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 10; // Adjust offset for fixed header
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            // Event listener for scroll to update active link
+            window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink(); // Call on load to set initial active link
+
+            // Smooth scrolling for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    const headerHeight = header.offsetHeight; // Get dynamic header height
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - headerHeight, // Adjust for fixed header height
+                            behavior: 'smooth'
+                        });
+                        // Close Bootstrap's mobile menu after clicking a link
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                            if (bsCollapse) {
+                                bsCollapse.hide();
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Adjust hero section height dynamically
+            const heroSection = document.getElementById('hero');
+            const setHeroHeight = () => {
+                if (header && heroSection) {
+                    const headerHeight = header.offsetHeight;
+                    heroSection.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+                }
+            };
+            setHeroHeight();
+            window.addEventListener('resize', setHeroHeight);
+        });
+    </script>
+</body>
+</html>
